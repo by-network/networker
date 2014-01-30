@@ -31,6 +31,6 @@ console.log('refrigerator                      :', refrigerator.toString());  //
 console.log('jukebox                           :', jukebox.toString());
 
 // and we can pick at random from a safe range of remaining equipment addresses
-console.log('random address                    :', equipment.address(3, 16382));
-console.log('random address                    :', equipment.address(3, 16382));
-console.log('random address                    :', equipment.address(3, 16382));
+console.log('random address                    :', equipment.address(2, 16382));
+console.log('random address                    :', equipment.address(2, 16382));
+console.log('random address                    :', equipment.address(2, 16382));
