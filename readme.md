@@ -52,7 +52,7 @@ console.log('random address                    :', equipment.address(3, 16382));
 * `n.subnet(networkSize)`                  split a network into subnets using `networkSize` bits
 * `n.size()`                               show the number of subnets in a network
 * `n.network([index])`                     select a random subnet or pick one at a specific index
-* `n.address([lowerIndex, [higherIndex]])` select a random subnet in the given range and `n.toString()` it
+* `n.address([lowerIndex, [higherIndex]])` select a random subnet in the given range
 * `n.toString()`                           string representation of the network address
 
 ## test
