@@ -1,0 +1,20 @@
+{
+  "name": "networker",
+  "version": "0.0.0",
+  "description": "design your own ipv4/6 networks",
+  "keywords": [
+    "networking",
+    "address",
+    "subnet",
+    "calculator",
+    "ip",
+    "ipv6",
+    "ipv4"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jessetane/networker.git"
+  },
+  "author": "Jesse Tane <jesse.tane@gmail.com>",
+  "license": "WTFPL"
+}
