@@ -2,9 +2,12 @@
 design your own ipv4/6 networks
 
 ## why
-mostly educational - was trying to teach myself about subnetting and most of the calculators out there are pretty confusing
+mostly educational - trying to teach myself about ip routing and most of the subnet calculators out there are pretty confusing
 
 ## how
+see [CIDR](http://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing)
+
+## example
 ```javascript
 var networker = require('networker');
 
@@ -44,12 +47,19 @@ console.log('random address                    :', equipment.address(3, 16382));
 console.log('random address                    :', equipment.address(3, 16382));
 ```
 
+## api
+* `networker(address, [prefixLength, [networkSize=entireNetwork]])` create a new network
+* `n.subnet(networkSize)`                  split a network into subnets using `networkSize` bits
+* `n.size()`                               show the number of subnets in a network
+* `n.network([index])`                     select a random subnet or pick one at a specific index
+* `n.address([lowerIndex, [higherIndex]])` select a random subnet in the given range and `n.toString()` it
+* `n.toString()`                           string representation of the network address
+
 ## test
 none yet.. but the example above can be run by doing `node example`
 
 ## notes
-* the example uses ipv6, but ipv4 works fine too
-* first pass at the api, `network()` and `address()` are confusingly similar and should probably be combined
+* the example uses ipv6, but ipv4 works the same way
 
 ## license
 WTFPL
